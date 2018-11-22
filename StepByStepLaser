@@ -1,0 +1,15 @@
+Lasercut 3.5
+
+1. open lasercut 3.5 
+2. Menu File -> Import select your dxf
+3. left-click, drag and highlight section to delete
+  to resize, Left side  side toolbar
+  enter new values (210 , 149)
+  Press ok
+  
+ Vector engrave = engrave a line 
+ Raster shaded = receseed area 
+ press Ctrl A
+ Tools -> Unite Lines
+          tolerance 0.1
+          
