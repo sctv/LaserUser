@@ -1,0 +1,180 @@
+These are settings we've been playing with.
+
+Please update them if you find that things need tuning!
+
+
+
+Note that speed is measured in mm.s-1, power in %MAX.
+
+Max. speed is 400mm.s-1 in "Cut" mode and 1000mm.s-1 in "Engrave" mode.
+
+
+
+I find that over time using a laser cutter, any settings used converge to some fairly good pseudo-universal settings which have a reasonable chance of working on most materials.
+
+For this laser they are:
+
+CUT:      S=4.8  P(l)=66  P(c)=58
+
+ENGRAVE:  S=800  P=40     Sd=0.06
+
+
+
+VECTOR ENGRAVE (Mode=Cut)
+Material 
+Thickness 
+Speed 
+Power 
+Corner Power 
+MDF 	Any 	400 	20-50 	~Power - 10 
+Plywood	Any 	400 	20-50 	~Power - 10 
+Paper	~80gsm?	400	8-12	~Power - 4
+Leather	Any	30	15	15
+
+
+RASTER ENGRAVE (Mode=Engrave)
+Material 
+Thickness 
+Speed 
+Power 
+Scan 
+Notes 
+MDF	Any	600	30-40	~0.05	 
+Plywood	Any	600	30-40	~0.05	 
+Acrylic (Shallow Engrave)	Any	600	30-50	~0.05	 
+Acrylic (0.2-1.5mm deep)	Any	100-250	66	~0.05	 
+Paper	Any	1000	20	~0.05	 
+Leather	Any	800	40	~0.08	 
+Apple	N/A	800	40	~0.10	 
+# Cast Acrylic produces a frosted effect when engraved. Extruded Acrylic is clearer
+
+
+
+CUTTING (Mode = Cut)
+Laser Ply Cutting
+NOTE: Other ply should be avoided.  It will not cut consistently due to lower grade and larger knots and will contain formaldehyde based glue.
+
+Thickness
+Speed 
+Power 
+Corner Power 
+Pass 
+Notes 
+3mm
+
+11
+
+55
+
+52
+
+1
+
+Works well for living hinge designs
+
+6mm	5	66	58	1	 
+
+
+MDF Cutting
+Thickness
+Speed 
+Power 
+Corner Power 
+Pass 
+Notes 
+3mm	5.5	66	58	1	 
+6mm	3-4 	60 	50 	1 	 
+
+
+Hardboard Cutting
+Thickness
+Speed 
+Power 
+Corner Power 
+Pass 
+Notes 
+~3mm	5 	66 	58 	1 	 
+
+
+Card/Paper Cutting
+Thickness
+Speed 
+Power 
+Corner Power 
+Pass 
+Notes 
+80gsm Paper	400	20	15	1	
+Air pump will blow cut pieces around.
+
+Keep the pump on but leave gaps in the cuts to break them off afterwards
+
+3mm cardboard 	40 	66 	58 	1-2 	Beware - tends to catch fire if done more slowly! 
+
+
+Acrylic Cutting
+Note: Extruded acrylic gives a cleaner "flame polished" edges than cast acrylic when lasercut
+
+Thickness
+Speed 
+Power 
+Corner Power 
+Pass 
+Notes 
+3mm	15	66	58	1	
+
+
+5mm 	6	66 	58 	1 	 
+6mm	3.5	66	58	1	 
+10mm	6	60	50	2	 
+
+
+Leather Cutting
+Thickness
+Speed 
+Power 
+Corner Power 
+Pass 
+Notes 
+1.25mm	60	66	58	1	 
+2mm	25	66	58	1	
+
+
+
+
+High Impact Polystyrene Sheet Cutting
+This is the white plastic in small sheets by the laser cutter. Ed can supply almost unlimited amounts of it, as it's waste packaging from where he works, Just ask! :)
+
+Thickness
+Speed 
+Power 
+Corner Power 
+Pass 
+Notes 
+1mm - CUT
+25 
+35 
+25 
+1 	 
+1mm - ENGRAVE	400	35	25	1	 
+
+
+Foam Board Cutting
+Thickness 
+Speed 
+Power 
+Corner Power 
+Pass 
+Notes 
+5mm - Engrave (Mark)	20 	10	10	1 	 
+5mm - Score (Half-Cut)	20	15	15	1	 
+5mm - Cut	20	20	20	1	 
+
+
+Design resources
+
+To make "Living hinge" and other bendable designs http://www.instructables.com/id/Curved-laser-bent-wood/
+Ultraflexible bendable design http://lab.kofaktor.hr/en/portfolio/super-flexible-laser-cut-plywood/
+ To make "Iinterlocking Notch" boxes http://boxmaker.rahulbotics.com/
+Designs for different types of joint - some laser, some cnc http://flexiblestream.org/project/50-digital-wood-joints 
+Various parametric enclosure designs and DXFs for common dev boards and parts: https://github.com/DanNixon/CAD
+Info from Nottinghack re Lasercut 5.3 https://wiki.nottinghack.org.uk/wiki/Laser_cutter/LaserCut/Usage
